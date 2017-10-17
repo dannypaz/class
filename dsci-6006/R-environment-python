@@ -1,0 +1,14 @@
+CREATE R ENVIRONMENT IN PYTHON
+==============================
+
+FIRST, RUN:
+
+conda create -n my-r-env -c r r-essentials
+
+TO ACTIVATE ENVIRONMENT:
+
+source activate my-r-env
+
+TO DEACTIVATE ENVIRONMENT:
+
+source deactivate my-r-env

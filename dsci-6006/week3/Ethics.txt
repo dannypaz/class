@@ -1,0 +1,19 @@
+Donatella Taurasi
+2:28 PM (24 minutes ago)
+
+to Nir, bcc: me 
+Hello All,
+
+Alessandro will teach a class on ethics on Monday, January 30th. To make sure we hit the ground running, please make sure to carefully read Alessandro's instructions for Monday.
+
+
+Please read each of the following three articles and come prepared with answers to each of the questions. Each item has supplementary resources as well though they are optional:
+
+1. First, please read http://www.businessinsider.com/programmers-confess-unethical-illegal-tasks-asked-of-them-2016-11/. If you have the time and inclination, check out some of the articles linked from that one, not least of which: https://medium.freecodecamp.com/the-code-im-still-ashamed-of-e4c021dff55e/. Question: Have you ever been asked to do something professionally that was illegal, unethical, or otherwise questionable?
+2. Read http://time.com/4471451/cathy-oneil-math-destruction/. You may also want to read http://www.businessinsider.com/racial-bias-in-criminal-courts-2017-1 and/or https://www.bloomberg.com/view/articles/2017-01-24/if-fake-news-fools-you-it-can-fool-robots-too/. I also recommend her book: https://weaponsofmathdestructionbook.com/. Question: Can you see how the tools of data science could be used to harm? What "weapons of math destruction" have you seen or could you imagine potentially affecting you and/or being responsible for?
+3. Finally, read http://ethics.acm.org/code-of-ethics/. You may also want to check out https://mathbabe.org/2011/10/25/emanuel-dermans-models-behaving-badly/ which includes a (much shorter) “Modeler’s Hippocratic Oath”. Question: Would you be willing to sign one or both of these documents?
+
+
+
+​See you all tomorrow,
+Donatella​
