@@ -1,0 +1,1 @@
+> English is a funny language; that explains why we park our car on the driveway and drive our car on the parkway. 

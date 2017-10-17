@@ -1,0 +1,30 @@
+# Create environment:
+# $ conda env create --force
+name: nlp
+channels:
+  - conda-forge
+  - damianavila82
+dependencies:
+  - python = 3.5
+  - ipython > 5.0
+  - jupyter
+  - numpy
+  - nltk
+  - textblob
+  - spacy
+  - matplotlib
+  - pandas
+  - seaborn
+  - scikit-learn
+  - tensorflow
+  - setuptools
+  - plotly
+  - gensim
+  - pip
+  - rise
+  - pip:
+      - ftfy 
+      - nbbrowserpdf
+    
+# Start environment:
+# $ source activate nlp

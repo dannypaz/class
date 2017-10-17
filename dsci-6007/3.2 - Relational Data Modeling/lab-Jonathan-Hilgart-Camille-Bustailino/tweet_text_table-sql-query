@@ -1,0 +1,6 @@
+CREATE MATERIALIZED VIEW tweet_text_and_id AS
+SELECT 
+CAST(regexp_replace(CAST (status AS text),'\\u0000', '', 'g') as JSON) ->'text'
+  as raw_tweet_text,
+CAST(regexp_replace(CAST (status AS text),'\\u0000', '', 'g') as JSON) -> 'id' as tweet_id
+from raw_tweets;

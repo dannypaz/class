@@ -1,0 +1,6 @@
+# Access size of S3
+# aws s3 ls s3://twitter-streaming02062017 --recursive --human-readable
+# --summarize returns about 625 MiB
+# Jupyter notebook running on vCPU below
+# http://http://ec2-52-55-211-3.compute-1.amazonaws.com/
+# :8888/?token=63a721520cdf67de68f80b77190a0e318563d235c77fa736

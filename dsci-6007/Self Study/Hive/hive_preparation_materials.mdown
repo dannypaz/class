@@ -1,0 +1,10 @@
+
+
+
+3. __Hive__
+    - Read: [Hive for Retail Analysis](http://yourstory.com/2012/04/hive-for-retail-analysis/)
+    - Watch: [Introduction to Apache Hive](https://www.youtube.com/watch?v=asBMEOuw3lw) (30 minutes)
+    - Read: [Which type of Hadoop jobs can't be written using Pig or Hive?](https://www.quora.com/Which-type-of-Hadoop-jobs-cant-be-written-using-Pig-or-Hive)
+    - Optional:
+        + Read: [How two analysts used Hive to make $2,826,500 before they were arrested](http://www.bloombergview.com/articles/2015-01-23/capital-one-fraud-researchers-may-also-have-done-some-fraud)
+        + Read: [Original paper that announced Hive from Facebook](http://www.vldb.org/pvldb/2/vldb09-938.pdf)

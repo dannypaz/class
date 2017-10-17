@@ -1,0 +1,7 @@
+CREATE MATERIALIZED VIEW normalized_hashtags AS 
+SELECT  LOWER(CAST(json_array_elements(CAST(regexp_replace(CAST (status AS text),'\\u0000', '', 'g') as JSON)
+-> 'entities' ->'hashtags') ->'text' as TEXT)) normalized_hashtags,
+CAST(regexp_replace(CAST (status AS text),'\\u0000', '', 'g') as JSON)
+-> 'entities' ->'hashtags' raw_hashtags,
+CAST(regexp_replace(CAST (status AS text),'\\u0000', '', 'g') as JSON) -> 'id' as tweet_id
+from raw_tweets; 

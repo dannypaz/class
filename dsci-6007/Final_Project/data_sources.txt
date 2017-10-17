@@ -1,0 +1,5 @@
+data sources
+
+https://www.climate.gov/maps-data/dataset/past-weather-zip-code-data-table - historic weather data
+http://www.bart.gov/about/reports/ridership - historic ridership for bart
+https://openweathermap.org/current - current sf weather

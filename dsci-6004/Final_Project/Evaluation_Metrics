@@ -1,0 +1,5 @@
+__author__='Jonathan Hilgart'
+
+from sklearn.metrics import accuracy_score
+
+def accuracy_score_test(query1,query2,query3,query4,query5):

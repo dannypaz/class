@@ -1,0 +1,35 @@
+# Create environment
+# $ conda env create --force
+name: gu
+channels:
+  - conda-forge
+  - damianavila82
+dependencies:
+  - python = 3.6
+  - ipython
+  - anaconda
+  - jupyter
+  - scipy
+  - numpy
+  - matplotlib
+  - seaborn
+  - plotly
+  - bokeh
+  - pandas
+  - scikit-learn
+  - requests
+  - beautifulsoup4
+  - setuptools
+  - pymc
+  - pip
+  - pip:
+    - rise
+    - nbbrowserpdf
+    - ipy-table
+    
+# Start environment
+# $ source activate gu
+
+# Setup RISE (https://github.com/damianavila/RISE) slideshows:
+# $ jupyter-nbextension install rise --py --sys-prefix
+# $ jupyter nbextension enable rise --py --sys-prefix

@@ -1,0 +1,39 @@
+status 
+
+list
+
+create 'social-usage', 'tw', 'fb'
+
+put 'social-usage', 'A|20151104', 'tw:id', '@a'
+
+put 'social-usage', 'A|20151104', 'tw:10', '180'
+
+put 'social-usage', 'A|20151104', 'tw:11', '270'
+
+put 'social-usage', 'A|20151104', 'tw:12', '240'
+
+put 'social-usage', 'A|20151104', 'tw:t', '690'
+
+create 'access-logs', 't', {SPLITS => ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f']}
+
+put 'access-logs', 'elton|jericho|201511', 't:1107', '650'
+
+put 'access-logs', 'elton|jericho|201511', 't:1106', '120'
+
+put 'access-logs', 'elton|jericho|201510', 't:2908', '80'
+
+put 'access-logs', 'elton|jericho|201509', 't:0110', '480'
+
+create 'with-custom-config', {NAME =>'cf1', VERSIONS=>3}
+
+put 'with-custom-config', 'rk1', 'cf1:data', 'v0'
+
+put 'with-custom-config', 'rk1', 'cf1:data', 'v1'
+
+put 'with-custom-config', 'rk1', 'cf1:data', 'v2'
+
+create 'counters', 'c'
+
+incr 'counters', 'rk1', 'c:1'
+
+exit

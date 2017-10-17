@@ -1,0 +1,8 @@
+It Provably Works, Probabilistically
+-----------------
+
+Today we enter the weird world of probabilistic data structures. Begin by watching the first nine (9) minutes of [“It Probably Works”](https://www.youtube.com/watch?v=FSlPU5Nrvds) with Tyler McMullen. Pause when he gets to the "Slightly Less Naive" solution at 8:53 and watch [Bloom Filters](https://www.youtube.com/watch?v=-SuTGoFYjZs) which will explain how bloom filters work (an algorithm he assumes his audience already knows). Once you can explain "kabloom", resume [“It Probably Works”](https://youtu.be/FSlPU5Nrvds?t=8m53s) and watch up to 22:45. When you've finished, you should have at least an intuitive understanding of HyperLogLog and Locality-sensitive Hashing.
+
+Now, to put that into practice, take a look at this blog post on [Approximate Algorithms in Apache Spark: HyperLogLog and Quantiles](https://databricks.com/blog/2016/05/19/approximate-algorithms-in-apache-spark-hyperloglog-and-quantiles.html).
+
+If you wish, you may (optionally) continue with the final section of his talk which is on Bimodal Multicast. But before you do, you will probably want to familiarize yourself with the Gossip protocol. This is explained in detail in Lesson 1 of [Week 2 of Cloud Computing Concepts, Part 1](https://www.coursera.org/learn/cloud-computing/home/week/2) (you might remember we covered [Week 1](https://www.coursera.org/learn/cloud-computing/home/week/1) of this course earlier in the term). A much shorter explanation is also provided by DataStax in the [Distributed Architecture](https://academy.datastax.com/resources/ds201-foundations-apache-cassandra?unit=distributed-architecture-gossip) section of their [DS201](https://academy.datastax.com/resources/ds201-foundations-apache-cassandra) course.

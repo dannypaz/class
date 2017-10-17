@@ -1,0 +1,14 @@
+Information Retrieval, Part II
+----
+- Watch __Ranked Information Retrieval__:
+     - [Introducing Ranked Retrieval](https://www.youtube.com/watch?v=5Gz3Hp217Io&index=80&list=PLhVhwi0Pz282aSA2uZX4jR3SkF3BKyMOK)
+     - [Scoring with the Jaccard Coefficient](https://www.youtube.com/watch?v=Vbdki_gnnYM&index=81&list=PLhVhwi0Pz282aSA2uZX4jR3SkF3BKyMOK)
+     - [Term Frequency Weighting](https://www.youtube.com/watch?v=43WvJU4LaUg&index=82&list=PLhVhwi0Pz282aSA2uZX4jR3SkF3BKyMOK)
+     - [Inverse Document Frequency Weighting](https://www.youtube.com/watch?v=a50Hv_N-yHA&index=83&list=PLhVhwi0Pz282aSA2uZX4jR3SkF3BKyMOK)
+     - [TF-IDF Weighting](https://www.youtube.com/watch?v=PhunzHqhKoQ&index=84&list=PLhVhwi0Pz282aSA2uZX4jR3SkF3BKyMOK)
+     - [The Vector Space Model](https://www.youtube.com/watch?v=ZEkO8QSlynY&index=85&list=PLhVhwi0Pz282aSA2uZX4jR3SkF3BKyMOK)
+     - [Calculating TF-IDF Cosine Scores](https://www.youtube.com/watch?v=E3shpvJUZ84&index=86&list=PLhVhwi0Pz282aSA2uZX4jR3SkF3BKyMOK)
+- Optional:
+     - [Evaluating Search Engines](https://www.youtube.com/watch?v=ds1OKuB7lDw&index=87&list=PLhVhwi0Pz282aSA2uZX4jR3SkF3BKyMOK)
+     - [Scoring, term weighting, and the vector space model](http://nlp.stanford.edu/IR-book/pdf/06vect.pdf)
+     - [Evaluation in Information Retrieval](http://nlp.stanford.edu/IR-book/pdf/08eval.pdf)

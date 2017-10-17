@@ -1,0 +1,6 @@
+student:
+    user: student
+    password: dsci6002
+    host: dsci6002.coa0jcm7ne71.us-east-1.rds.amazonaws.com
+    port: 5432
+    dbname: postgres

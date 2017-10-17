@@ -1,0 +1,27 @@
+# Cache folders
+.ipynb_checkpoints/
+
+metastore_db/
+.dat
+
+NIFEST
+build
+dist
+_build
+docs/man/*.gz
+docs/source/api/generated
+docs/source/config/options
+docs/source/interactive/magics-generated.txt
+docs/gh-pages
+jupyter_notebook/notebook/static/mathjax
+jupyter_notebook/static/style/*.map
+*.py[co]
+__pycache__
+*.egg-info
+*~
+*.bak
+.tox
+.DS_Store
+\#*#
+.#*
+.coverage

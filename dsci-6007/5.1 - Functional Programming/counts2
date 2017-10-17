@@ -1,0 +1,19 @@
+No configs found; falling back on auto-configuration
+Traceback (most recent call last):
+  File "lab-5.1-count-using-MrJob-Jonathan-Michael_seeber.py", line 32, in <module>
+    MRWordFreqCount.run()
+  File "/Users/jonathanhilgart/anaconda/lib/python3.5/site-packages/mrjob/job.py", line 439, in run
+    mr_job.execute()
+  File "/Users/jonathanhilgart/anaconda/lib/python3.5/site-packages/mrjob/job.py", line 460, in execute
+    super(MRJob, self).execute()
+  File "/Users/jonathanhilgart/anaconda/lib/python3.5/site-packages/mrjob/launch.py", line 161, in execute
+    self.run_job()
+  File "/Users/jonathanhilgart/anaconda/lib/python3.5/site-packages/mrjob/launch.py", line 231, in run_job
+    runner.run()
+  File "/Users/jonathanhilgart/anaconda/lib/python3.5/site-packages/mrjob/runner.py", line 476, in run
+    self._run()
+  File "/Users/jonathanhilgart/anaconda/lib/python3.5/site-packages/mrjob/sim.py", line 173, in _run
+    _error_on_bad_paths(self.fs, self._input_paths)
+  File "/Users/jonathanhilgart/anaconda/lib/python3.5/site-packages/mrjob/sim.py", line 565, in _error_on_bad_paths
+    "None found in %s" % paths)
+ValueError: At least one valid path is required. None found in ['twitter-streaming-data-test/']

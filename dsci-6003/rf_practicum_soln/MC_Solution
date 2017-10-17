@@ -1,0 +1,6 @@
+def calculator(exp):
+	return exp.split()
+
+
+print calculator('5 + 2 - 3')
+print calculator('5 + (23 * 2) - 8')

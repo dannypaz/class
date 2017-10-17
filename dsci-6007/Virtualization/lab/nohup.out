@@ -1,0 +1,27 @@
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/usr/lib/python2.7/SimpleHTTPServer.py", line 235, in <module>
+    test()
+  File "/usr/lib/python2.7/SimpleHTTPServer.py", line 231, in test
+    BaseHTTPServer.test(HandlerClass, ServerClass)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 606, in test
+    httpd = ServerClass(server_address, HandlerClass)
+  File "/usr/lib/python2.7/SocketServer.py", line 417, in __init__
+    self.server_bind()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 108, in server_bind
+    SocketServer.TCPServer.server_bind(self)
+  File "/usr/lib/python2.7/SocketServer.py", line 431, in server_bind
+    self.socket.bind(self.server_address)
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 98] Address already in use
+22.22.22.1 - - [23/Jan/2017 21:28:36] "GET /top10.html HTTP/1.1" 200 -
+22.22.22.1 - - [23/Jan/2017 21:28:36] code 404, message File not found
+22.22.22.1 - - [23/Jan/2017 21:28:36] "GET /favicon.ico HTTP/1.1" 404 -
+22.22.22.1 - - [23/Jan/2017 21:29:41] "GET /top10.html HTTP/1.1" 200 -
+22.22.22.1 - - [23/Jan/2017 21:29:43] "GET /top10.html HTTP/1.1" 200 -
+22.22.22.1 - - [23/Jan/2017 21:29:44] "GET /top10.html HTTP/1.1" 200 -
+22.22.22.1 - - [23/Jan/2017 21:31:35] "GET /top10.html HTTP/1.1" 200 -

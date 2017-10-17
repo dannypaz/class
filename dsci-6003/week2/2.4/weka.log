@@ -1,0 +1,4 @@
+2016-09-26 09:01:23 weka.gui.GUIChooser main
+INFO: Logging started
+---Registering Weka Editors---
+Trying to add database driver (JDBC): jdbc.idbDriver - Error, not in CLASSPATH?

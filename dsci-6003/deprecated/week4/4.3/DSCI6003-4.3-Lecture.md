@@ -1,0 +1,88 @@
+# Ensembles and Random Forests
+
+*Ensemble Methods* combine multiple machine learning algorithms to obtain better predictive performance. The idea is simple: run multiple models on the data and use their predictions to make a prediction that is better than any of the models could do alone.
+
+
+## Bagging
+
+Bagging, also known as *bootstrap aggregating*, is for running multiple models in parallel (the models don't use each other's results in order to predict). Each model gets a vote on the final prediction.
+
+For classification problems (predicting a categorical value), we choose the label with the most votes.
+
+For regression problems (predicting a continuous value), we average the values given by all the models.
+
+You can bag with any collection of algorithms, giving them each a vote to the final prediction.
+
+
+## Random Forests
+
+Probably the most common ensemble method is a *Random Forest*, which consists of a collection of Decision Trees.
+
+They were developed by Leo Breimen, who has the most extensive notes about them on his [webpage](http://www.stat.berkeley.edu/~breiman/RandomForests/cc_home.htm).
+
+The idea is to repeatedly randomly select data from the dataset (*with replacement*) and build a Decision Tree with each new sample. The default is to have the randomly selected data be the same size as the initial dataset. Note that since we are sampling with replacement, many data points will be repeated in the sample and many won't be included.
+
+Random Forests also limit each node of the Decision Tree to only consider splitting on a random subset of the features.
+
+Here is the pseudocode for creating a Random Forest:
+
+    CreateRandomForest(data, num_trees, num_features):
+        Repeat num_trees times:
+            Create a random sample of the test data with replacement
+            Build a decision tree with that sample (only consider num_features features at each node)
+        Return the list of the decision trees created
+
+To classify a new document, use each tree to get a prediction. Choose the label that gets the most votes.
+
+The default parameters that sklearn uses, which are also standard defaults, are 10 trees and only considering sqrt(m) features (where m is the total number of features).
+
+
+### Out of Bag Error
+
+We can analyze a Random Forest using the standard cross validation method of splitting the dataset into a training set and a testing set. However, if we're clever, we notice that each tree doesn't see all of the training data, so we can use the skipped data to cross validate each tree individually.
+
+We'll skip the mathematical proof, but when selecting from the dataset, about one third of the data is left out (discussed [here](http://math.stackexchange.com/questions/203491/expected-coverage-after-sampling-with-replacement-k-times) if you want to think about the math). So every data point can be tested with about 1/3 of the trees. We calculate the percent of these that we get correct, and this is the *out-of-bag error*.
+
+It has been proven that this is sufficient and that cross validation is not strictly necessary for a random forest, but we often still use it as that makes it easier to compare with other models.
+
+
+### Feature Importance
+
+We can use the random forest to determine which features are the most importance in predicting the class.
+
+Breiman, the originator of random forests, uses out-of-bag error to determine feature importance, discussed [here](http://www.stat.berkeley.edu/~breiman/RandomForests/cc_home.htm#varimp). The idea is to compare the out-of-bag error of the trees with the out-of-bag error of the trees if you change the feature's value (basically, if we screw with the value of the feature, how much does that impact the total error?). Here is the pseudocode for calculating the feature importance for a single feature:
+
+        For every tree:
+            Take the data that is not covered by the tree.
+            Randomly permute the values of the feature (i.e. keep the same values,
+                but shuffle them around the data points).
+            Calculate the OOB error on the data with the feature values permuted.
+            Subtract the permutated OOB from the OOB of the original data to get the
+                feature importance on this tree.
+        Average all the individual feature importances to get the feature importance.
+
+sklearn uses a different method, described [here](http://scikit-learn.org/stable/modules/ensemble.html#feature-importance-evaluation). Their method doesn't involve using the out-of-bag score. Basically, the higher in the tree the feature is, the more important it is in determining the result of a data point. The expected fraction of data points that reach a node is used as an estimate of that feature's importance for that tree. Then average those values across all trees to get the feature's importance.
+
+
+### Regression Forests
+
+Random Forests can also be used for regression. They work very similarly to Classification Random Forests, except when predicting a new value, they take the average of the predicted values.
+
+
+### Random Forests with sklearn
+
+sklearn has both Random Forests for both [classification](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) and [regression](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html). The documentation explains all of the parameters that you have control over, but you can use it like all other sklearn models:
+
+```python
+from sklearn.ensemble import RandomForestClassifier
+
+rf = RandomForestClassifer()
+rf.fit(X_train, y_train)
+print "accuracy:", rf.score(X_test, y_test)
+```
+
+## Resources:
+
+* [Random Forests by Leo Breiman and Adele Cutler](http://www.stat.berkeley.edu/~breiman/RandomForests/cc_home.htm)
+* [sklearn ensembles](http://scikit-learn.org/stable/modules/ensemble.html)
+* [Applied Data Science](http://columbia-applied-data-science.github.io/appdatasci.pdf) (Section 9.4.2)
